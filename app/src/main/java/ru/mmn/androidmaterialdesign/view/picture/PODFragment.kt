@@ -3,9 +3,7 @@ package ru.mmn.androidmaterialdesign.view.picture
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
@@ -18,6 +16,7 @@ import ru.mmn.androidmaterialdesign.databinding.FragmentMainBinding
 import ru.mmn.androidmaterialdesign.hide
 import ru.mmn.androidmaterialdesign.repository.PODServerResponseData
 import ru.mmn.androidmaterialdesign.show
+import ru.mmn.androidmaterialdesign.view.MainActivity
 import ru.mmn.androidmaterialdesign.viewmodel.PODData
 import ru.mmn.androidmaterialdesign.viewmodel.PODViewModel
 
@@ -45,6 +44,7 @@ class PODFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        setBottomAppBar(view)
         viewModel.getLiveData().observe(viewLifecycleOwner, Observer { renderData(it) })
         viewModel.sendServerRequest()
         binding.inputLayout.setEndIconOnClickListener {
@@ -98,6 +98,32 @@ class PODFragment : Fragment() {
 
     companion object {
         fun newInstance() = PODFragment()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.menu_bottom_bar, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.app_bar_fav -> Toast.makeText(context, "Favourite", Toast.LENGTH_SHORT).show()
+            R.id.app_bar_search -> Toast.makeText(context, "Settings", Toast.LENGTH_SHORT).show()
+            android.R.id.home -> {
+                activity?.let {
+                    BottomNavigationDrawerFragment.newInstance().show(it.supportFragmentManager, "tag")
+                }
+            }
+
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun setBottomAppBar(view: View){
+        val context = activity as MainActivity
+        context.setSupportActionBar(view.findViewById(R.id.bottom_app_bar))
+        setHasOptionsMenu(true)
     }
 }
 
