@@ -19,6 +19,7 @@ import ru.mmn.androidmaterialdesign.hide
 import ru.mmn.androidmaterialdesign.repository.PODServerResponseData
 import ru.mmn.androidmaterialdesign.show
 import ru.mmn.androidmaterialdesign.view.MainActivity
+import ru.mmn.androidmaterialdesign.view.chips.ChipsFragment
 import ru.mmn.androidmaterialdesign.viewmodel.PODData
 import ru.mmn.androidmaterialdesign.viewmodel.PODViewModel
 
@@ -61,7 +62,7 @@ class PODFragment : Fragment() {
         bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
         bottomSheetBehavior.addBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
-            override fun onStateChanged(bottomSheet: View, newState: Int) { //FIXME
+            override fun onStateChanged(bottomSheet: View, newState: Int) { //FIXME переделать, чтобы описание выводилось под фото
                 when (newState) {
                     BottomSheetBehavior.STATE_DRAGGING -> Toast.makeText(context, "Dragging", Toast.LENGTH_SHORT).show()
                     BottomSheetBehavior.STATE_COLLAPSED -> Toast.makeText(context, "Collapsed", Toast.LENGTH_SHORT).show()
@@ -114,7 +115,10 @@ class PODFragment : Fragment() {
         when (item.itemId) {
             R.id.app_bar_fav -> Toast.makeText(context, "Favourite", Toast.LENGTH_SHORT).show()
             R.id.app_bar_search -> Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
-            R.id.app_bar_settings -> Toast.makeText(context, "Settings", Toast.LENGTH_SHORT).show()
+            R.id.app_bar_settings -> {
+                activity?.supportFragmentManager?.beginTransaction()?.add(R.id.container,
+                    ChipsFragment.newInstance())?.addToBackStack(null)?.commit()
+            }
             android.R.id.home -> {
                 activity?.let {
                     BottomNavigationDrawerFragment.newInstance().show(it.supportFragmentManager, "tag")
