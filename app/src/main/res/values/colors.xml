@@ -13,4 +13,5 @@
     <color name="colorPrimary">#03125C</color>
     <color name="colorPrimaryDark">#01081E</color>
     <color name="colorAccent">#F57C00</color>
+    <color name="fabIconColor">#303F9F</color>
 </resources>

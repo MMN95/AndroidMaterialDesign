@@ -9,18 +9,18 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.chip.Chip
 import ru.mmn.androidmaterialdesign.databinding.FragmentChipsBinding
 
-class ChipsFragment: Fragment(){
-    var _binding: FragmentChipsBinding? = null
-    val binding: FragmentChipsBinding
-    get(){
-        return _binding!!
-    }
+class ChipsFragment : Fragment() {
+    private var _binding: FragmentChipsBinding? = null
+    private val binding: FragmentChipsBinding
+        get() {
+            return _binding!!
+        }
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentChipsBinding.inflate(inflater)
         return binding.root
     }
@@ -36,12 +36,12 @@ class ChipsFragment: Fragment(){
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.chipGroup.setOnCheckedChangeListener{chipGroup, position ->
+        binding.chipGroup.setOnCheckedChangeListener { chipGroup, position ->
             chipGroup.findViewById<Chip>(position)?.let {
                 Toast.makeText(context, "Выбран ${it.text}", Toast.LENGTH_SHORT).show()
             }
         }
-        binding.chipClose.setOnCloseIconClickListener{
+        binding.chipClose.setOnCloseIconClickListener {
             Toast.makeText(context, "Close is clicked", Toast.LENGTH_SHORT).show()
         }
 
