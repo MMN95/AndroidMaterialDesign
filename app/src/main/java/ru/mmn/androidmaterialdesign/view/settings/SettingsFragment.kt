@@ -1,4 +1,4 @@
-package ru.mmn.androidmaterialdesign.view.chips
+package ru.mmn.androidmaterialdesign.view.settings
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.chip.Chip
-import ru.mmn.androidmaterialdesign.databinding.FragmentChipsBinding
+import ru.mmn.androidmaterialdesign.databinding.FragmentSettingsBinding
 
-class ChipsFragment : Fragment() {
-    private var _binding: FragmentChipsBinding? = null
-    private val binding: FragmentChipsBinding
+class SettingsFragment : Fragment() {
+    private var _binding: FragmentSettingsBinding? = null
+    private val binding: FragmentSettingsBinding
         get() {
             return _binding!!
         }
@@ -21,7 +21,7 @@ class ChipsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentChipsBinding.inflate(inflater)
+        _binding = FragmentSettingsBinding.inflate(inflater)
         return binding.root
     }
 
@@ -31,7 +31,7 @@ class ChipsFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance() = ChipsFragment()
+        fun newInstance() = SettingsFragment()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -41,9 +41,5 @@ class ChipsFragment : Fragment() {
                 Toast.makeText(context, "Выбран ${it.text}", Toast.LENGTH_SHORT).show()
             }
         }
-        binding.chipClose.setOnCloseIconClickListener {
-            Toast.makeText(context, "Close is clicked", Toast.LENGTH_SHORT).show()
-        }
-
     }
 }

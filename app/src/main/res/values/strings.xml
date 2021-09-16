@@ -8,4 +8,20 @@
     <string name="search">Поиск</string>
     <string name="navigationOneTitle">На экран 1</string>
     <string name="navigationTwoTitle">На экран 2</string>
+    <string name="differentChipsLayoutDefaultChipText">Default</string>
+    <string name="differentChipsLayoutEntryChipText">Entry</string>
+    <string name="differentChipsLayoutChoiseChipText">Choice</string>
+    <string name="differentChipsLayoutActionChipText">Action</string>
+    <string name="differentChipsLayoutFilterChipText">Filter</string>
+    <string name="backgroundColoredChipText">Background Color</string>
+    <string name="rippleColoredChipText">Ripple Color</string>
+    <string name="iconChipText">Chip icon</string>
+    <string name="chipGroupChoiceAText">Choice A</string>
+    <string name="chipGroupChoiceBText">Choice B</string>
+    <string name="chipGroupChoiceCText">Choice C</string>
+    <string name="chipGroupChoiceDText">Choice D</string>
+    <string name="chipGroupChoiceEText">Choice E</string>
+    <string name="tabsTabOneText">Tab 1</string>
+    <string name="tabsTabTwoText">Tab 2</string>
+    <string name="tabsTabThreeText">Tab 3</string>
 </resources>

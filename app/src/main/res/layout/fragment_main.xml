@@ -54,10 +54,6 @@
         android:id="@+id/bottomSheetLayoutInclude"
         layout="@layout/bottom_sheet_layout" />
 
-    <include
-        android:id="@+id/loadingLayoutInclude"
-        layout="@layout/loading_layout" />
-
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="match_parent"
@@ -67,9 +63,9 @@
         app:fabAlignmentMode="center"
         app:fabCradleMargin="@dimen/fabCradleMargin"
         app:fabCradleRoundedCornerRadius="@dimen/fabCradleRoundedCornerRadius"
-        app:navigationIcon="@drawable/ic_hamburger_menu_bottom_bar"
         app:hideOnScroll="true"
-        app:layout_scrollFlags="scroll|enterAlways" />
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/ic_hamburger_menu_bottom_bar" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"

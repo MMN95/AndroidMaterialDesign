@@ -16,7 +16,7 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import ru.mmn.androidmaterialdesign.R
 import ru.mmn.androidmaterialdesign.databinding.FragmentMainBinding
 import ru.mmn.androidmaterialdesign.view.MainActivity
-import ru.mmn.androidmaterialdesign.view.chips.ChipsFragment
+import ru.mmn.androidmaterialdesign.view.settings.SettingsFragment
 import ru.mmn.androidmaterialdesign.viewmodel.PODData
 import ru.mmn.androidmaterialdesign.viewmodel.PODViewModel
 
@@ -108,7 +108,7 @@ class PODFragment : Fragment() {
                 Toast.makeText(context, data.error.message, Toast.LENGTH_LONG).show()
             }
             is PODData.Loading -> {
-                binding.imageView.load(R.drawable.progress_animation){
+                binding.imageView.load(R.drawable.progress_animation) {
                     error(R.drawable.ic_load_error_vector)
                 }
             }
@@ -140,9 +140,9 @@ class PODFragment : Fragment() {
             R.id.appBarFav -> Toast.makeText(context, "Favourite", Toast.LENGTH_SHORT).show()
             R.id.appBarSearch -> Toast.makeText(context, "Search", Toast.LENGTH_SHORT).show()
             R.id.appBarSettings -> {
-                activity?.supportFragmentManager?.beginTransaction()?.add(
+                activity?.supportFragmentManager?.beginTransaction()?.replace(
                     R.id.container,
-                    ChipsFragment.newInstance()
+                    SettingsFragment.newInstance()
                 )?.addToBackStack(null)?.commit()
             }
             android.R.id.home -> {
