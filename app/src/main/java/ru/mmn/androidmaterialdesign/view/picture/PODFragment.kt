@@ -15,8 +15,6 @@ import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import ru.mmn.androidmaterialdesign.R
 import ru.mmn.androidmaterialdesign.databinding.FragmentMainBinding
-import ru.mmn.androidmaterialdesign.hide
-import ru.mmn.androidmaterialdesign.show
 import ru.mmn.androidmaterialdesign.view.MainActivity
 import ru.mmn.androidmaterialdesign.view.chips.ChipsFragment
 import ru.mmn.androidmaterialdesign.viewmodel.PODData
@@ -110,11 +108,13 @@ class PODFragment : Fragment() {
                 Toast.makeText(context, data.error.message, Toast.LENGTH_LONG).show()
             }
             is PODData.Loading -> {
-                binding.loadingLayoutInclude.loadingLayout.show()
+                binding.imageView.load(R.drawable.progress_animation){
+                    error(R.drawable.ic_load_error_vector)
+                }
             }
             is PODData.Success -> {
-                binding.loadingLayoutInclude.loadingLayout.hide()
                 binding.imageView.load(data.serverResponseData.url) {
+                    placeholder(R.drawable.progress_animation)
                     error(R.drawable.ic_load_error_vector)
                 }
             }
