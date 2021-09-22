@@ -7,11 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
     <color name="color_gray">#66000000</color>
 
-    <color name="colorPrimary">#03125C</color>
-    <color name="colorPrimaryDark">#01081E</color>
+    <!-- Primary colors -->
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryVariant">#484848</color>
+    <color name="colorOnPrimary">#cfd8dc</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondary">#9b0000</color>
+    <color name="colorSecondaryVariant">#d50000</color>
+    <color name="colorOnSecondary">#ffffff</color>
+
+
     <color name="colorAccent">#F57C00</color>
-    <color name="fabIconColor">#303F9F</color>
+    <color name="fabIconColor">#9FA9EF</color>
 </resources>
