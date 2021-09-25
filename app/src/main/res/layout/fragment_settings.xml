@@ -92,31 +92,31 @@
                 app:singleSelection="true">
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chipGroupChoiceAText" />
+                    android:text="@string/chipGroupChoiceAText"/>
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chipGroupChoiceBText" />
+                    android:text="@string/chipGroupChoiceBText"/>
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chipGroupChoiceCText" />
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chipGroupChoiceDText" />
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chipGroupChoiceEText" />

@@ -19,7 +19,6 @@
     <color name="colorSecondaryVariant">#d50000</color>
     <color name="colorOnSecondary">#ffffff</color>
 
-
-    <color name="colorAccent">#F57C00</color>
-    <color name="fabIconColor">#9FA9EF</color>
+    <!-- Other colors -->
+    <color name="colorError">@color/colorSecondaryVariant</color>
 </resources>
