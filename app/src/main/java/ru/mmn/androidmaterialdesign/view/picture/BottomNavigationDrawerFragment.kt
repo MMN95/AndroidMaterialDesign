@@ -12,14 +12,14 @@ import ru.mmn.androidmaterialdesign.databinding.BottomNavigationLayoutBinding
 class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
 
     private var _binding: BottomNavigationLayoutBinding? = null
-    val binding: BottomNavigationLayoutBinding
+    private val binding: BottomNavigationLayoutBinding
         get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = BottomNavigationLayoutBinding.inflate(inflater)
         return binding.root
     }
@@ -27,10 +27,10 @@ class BottomNavigationDrawerFragment : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.navigationView.setNavigationItemSelectedListener { it ->
+        binding.navigationView.setNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.navigation_one -> Toast.makeText(context, "1", Toast.LENGTH_SHORT).show()
-                R.id.navigation_two -> Toast.makeText(context, "2", Toast.LENGTH_SHORT).show()
+                R.id.navigationOne -> Toast.makeText(context, "1", Toast.LENGTH_SHORT).show()
+                R.id.navigationTwo -> Toast.makeText(context, "2", Toast.LENGTH_SHORT).show()
             }
             true
         }

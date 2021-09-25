@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomOutlinedBox" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="counterEnabled">true</item>
+        <item name="counterMaxLength">20</item>
+        <item name="boxCornerRadiusTopStart">20dp</item>3
+        <item name="boxCornerRadiusTopEnd">20dp</item>
+        <item name="boxCornerRadiusBottomStart">20dp</item>
+        <item name="boxCornerRadiusBottomEnd">20dp</item>
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="boxStrokeErrorColor">@color/colorSecondaryVariant</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconDrawable">@drawable/ic_wikipedia</item>
+        <item name="endIconCheckable">true</item>
+        <item name="textInputStyle">@style/CustomOutlinedBox</item>
+    </style>
+
+    <style name="chipText" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="CustomChoiseChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textAppearance">@style/chipText</item>
+    </style>
+
+    <style name="CustomFAB" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="tint">@color/black</item>
+    </style>
+</resources>

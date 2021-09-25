@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottomNavigationMarginStart">8dp</dimen>
+    <dimen name="bottomNavigationMarginTop">8dp</dimen>
+    <dimen name="bottomNavigationMarginEnd">8dp</dimen>
+    <dimen name="mainViewPaddingStart">10dp</dimen>
+    <dimen name="mainViewPaddingEnd">10dp</dimen>
+    <dimen name="fabCradleMargin">10dp</dimen>
+    <dimen name="fabCradleRoundedCornerRadius">50dp</dimen>
+    <dimen name="startMarginRowContent">16dp</dimen>
+    <dimen name="topMarginRowContent">16dp</dimen>
+    <dimen name="endMarginRowContent">16dp</dimen>
+    <dimen name="iconChipStartPadding">10dp</dimen>
+</resources>
