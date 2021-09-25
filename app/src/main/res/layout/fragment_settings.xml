@@ -95,13 +95,13 @@
                     style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chipGroupChoiceAText"/>
+                    android:text="@string/chipGroupChoiceAText" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/CustomChoiseChip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chipGroupChoiceBText"/>
+                    android:text="@string/chipGroupChoiceBText" />
 
                 <com.google.android.material.chip.Chip
                     style="@style/CustomChoiseChip"

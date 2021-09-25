@@ -56,48 +56,6 @@ class PODFragment : Fragment() {
         binding.scrollView.setOnScrollChangeListener { it, q, w, e, r ->
             binding.bottomAppBar.fabAlignmentMode = BottomAppBar.FAB_ALIGNMENT_MODE_END
         }
-        bottomSheetBehavior =
-            BottomSheetBehavior.from(binding.bottomSheetLayoutInclude.bottomSheetContainer)
-        bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-        bottomSheetBehavior.addBottomSheetCallback(object :
-            BottomSheetBehavior.BottomSheetCallback() {
-            override fun onStateChanged(
-                bottomSheet: View,
-                newState: Int
-            ) { //FIXME переделать, чтобы описание выводилось под фото
-                when (newState) {
-                    BottomSheetBehavior.STATE_DRAGGING -> Toast.makeText(
-                        context,
-                        "Dragging",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    BottomSheetBehavior.STATE_COLLAPSED -> Toast.makeText(
-                        context,
-                        "Collapsed",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    BottomSheetBehavior.STATE_EXPANDED -> binding.bottomSheetLayoutInclude.bottomSheetDescriptionHeader
-                    BottomSheetBehavior.STATE_HALF_EXPANDED -> Toast.makeText(
-                        context,
-                        "Half-expanded",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    BottomSheetBehavior.STATE_HIDDEN -> Toast.makeText(
-                        context,
-                        "Hidden",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    BottomSheetBehavior.STATE_SETTLING -> Toast.makeText(
-                        context,
-                        "Settling",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
-            }
-
-            override fun onSlide(bottomSheet: View, slideOffset: Float) { //FIXME
-            }
-        })
 
 
     }
