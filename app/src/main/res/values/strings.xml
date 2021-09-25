@@ -24,4 +24,6 @@
     <string name="tabsTabOneText">Tab 1</string>
     <string name="tabsTabTwoText">Tab 2</string>
     <string name="tabsTabThreeText">Tab 3</string>
+    <string name="darkThemeChipText">Dark Theme</string>
+    <string name="lightThemeChipText">Light Theme</string>
 </resources>
