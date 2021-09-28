@@ -31,4 +31,8 @@
     <color name="colorSecondaryVariantLight">#fff59d</color>
     <color name="colorOnSecondaryLight">#ffffcf</color>
 
+    <!-- Accent colors -->
+    <color name="colorAccent">#F07C00</color>
+    <color name="colorAccent40Alfa">#66F07C00</color>
+
 </resources>
