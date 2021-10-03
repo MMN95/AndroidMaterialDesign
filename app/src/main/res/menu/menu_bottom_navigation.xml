@@ -2,7 +2,7 @@
     <group android:checkableBehavior="none">
         <item
             android:id="@+id/navigationOne"
-            android:icon="@drawable/ic_archive"
+            android:icon="@drawable/ic_system"
             android:title="@string/navigationOneTitle" />
         <item
             android:id="@+id/navigationTwo"
