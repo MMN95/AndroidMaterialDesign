@@ -1,8 +1,8 @@
 package ru.mmn.androidmaterialdesign.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import ru.mmn.androidmaterialdesign.R
 import ru.mmn.androidmaterialdesign.databinding.ActivityMainBinding
 import ru.mmn.androidmaterialdesign.view.picture.PODFragment
