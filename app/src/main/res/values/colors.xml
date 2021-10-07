@@ -9,16 +9,30 @@
     <color name="white">#FFFFFFFF</color>
     <color name="color_gray">#66000000</color>
 
+    <!-- Dark Theme -->
     <!-- Primary colors -->
-    <color name="colorPrimary">#212121</color>
-    <color name="colorPrimaryVariant">#484848</color>
-    <color name="colorOnPrimary">#cfd8dc</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorPrimaryVariantDark">#484848</color>
+    <color name="colorOnPrimaryDark">#cfd8dc</color>
 
     <!-- Secondary colors -->
-    <color name="colorSecondary">#9b0000</color>
-    <color name="colorSecondaryVariant">#d50000</color>
-    <color name="colorOnSecondary">#ffffff</color>
+    <color name="colorSecondaryDark">#9b0000</color>
+    <color name="colorSecondaryVariantDark">#d50000</color>
+    <color name="colorOnSecondaryDark">#ffffff</color>
 
-    <!-- Other colors -->
-    <color name="colorError">@color/colorSecondaryVariant</color>
+    <!--Light Theme -->
+    <!-- Primary colors -->
+    <color name="colorPrimaryLight">#75a478</color>
+    <color name="colorPrimaryVariantLight">#a5d6a7</color>
+    <color name="colorOnPrimaryLight">#d7ffd9</color>
+
+    <!-- Secondary colors -->
+    <color name="colorSecondaryLight">#cbc26d</color>
+    <color name="colorSecondaryVariantLight">#fff59d</color>
+    <color name="colorOnSecondaryLight">#ffffcf</color>
+
+    <!-- Accent colors -->
+    <color name="colorAccent">#F07C00</color>
+    <color name="colorAccent40Alfa">#66F07C00</color>
+
 </resources>

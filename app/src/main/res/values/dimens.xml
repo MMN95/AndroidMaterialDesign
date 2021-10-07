@@ -11,4 +11,9 @@
     <dimen name="topMarginRowContent">16dp</dimen>
     <dimen name="endMarginRowContent">16dp</dimen>
     <dimen name="iconChipStartPadding">10dp</dimen>
+    <dimen name="swipeLayoutMarginBottom">100dp</dimen>
+    <dimen name="swipeIndicatorMarginStart">7dp</dimen>
+    <dimen name="swipeIndicatorMarginLeft">7dp</dimen>
+    <dimen name="swipeIndicatorMarginEnd">7dp</dimen>
+    <dimen name="swipeIndicatorMarginRight">7dp</dimen>
 </resources>

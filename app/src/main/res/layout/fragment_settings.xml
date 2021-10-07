@@ -11,6 +11,32 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/themeChangeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/startMarginRowContent"
+            android:layout_marginTop="@dimen/topMarginRowContent"
+            android:layout_marginEnd="@dimen/endMarginRowContent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/darkThemeChip"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/darkThemeChipText" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/lightThemeChip"
+                style="@style/Widget.MaterialComponents.Chip.Action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lightThemeChipText" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
             android:id="@+id/differentChipsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -147,6 +173,5 @@
                 android:layout_height="wrap_content"
                 android:text="@string/tabsTabThreeText" />
         </com.google.android.material.tabs.TabLayout>
-
     </LinearLayout>
 </ScrollView>

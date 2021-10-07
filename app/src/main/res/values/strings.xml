@@ -6,7 +6,7 @@
     <string name="favourite">Избранное</string>
     <string name="settings">Настройки</string>
     <string name="search">Поиск</string>
-    <string name="navigationOneTitle">На экран 1</string>
+    <string name="navigationOneTitle">Космос</string>
     <string name="navigationTwoTitle">На экран 2</string>
     <string name="differentChipsLayoutDefaultChipText">Default</string>
     <string name="differentChipsLayoutEntryChipText">Entry</string>
@@ -24,4 +24,6 @@
     <string name="tabsTabOneText">Tab 1</string>
     <string name="tabsTabTwoText">Tab 2</string>
     <string name="tabsTabThreeText">Tab 3</string>
+    <string name="darkThemeChipText">Dark Theme</string>
+    <string name="lightThemeChipText">Light Theme</string>
 </resources>
